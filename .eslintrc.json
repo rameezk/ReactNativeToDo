@@ -1,0 +1,42 @@
+{
+  "plugins": ["react", "import"],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true,
+    "jasmine": true
+  },
+  "settings": {
+    "react": {
+      "createClass": "createReactClass",
+      "pragma": "React",
+      "version": "15.0"
+    }
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "no-const-assign": "warn",
+    "no-this-before-super": "warn",
+    "no-undef": "warn",
+    "no-unreachable": "warn",
+    "constructor-super": "warn",
+    "valid-typeof": "warn",
+    "indent": [1, 2],
+    "no-console": 0,
+    "no-unused-vars": [1, { "vars": "local", "args": "none" }],
+    "id-length": 0,
+    "no-set-state": "off",
+    "quotes": [1, "single"],
+    "comma-dangle": ["error", "always-multiline"],
+    "semi": ["error", "never"]
+  }
+}
