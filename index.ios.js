@@ -8,3 +8,5 @@ const ReactNativeTodo = () => {
 }
 
 AppRegistry.registerComponent('ReactNativeTodo', () => ReactNativeTodo)
+
+export default ReactNativeTodo
