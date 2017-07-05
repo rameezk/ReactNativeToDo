@@ -1,1 +1,1 @@
-# Simple Todo app written in React Native
+# Simple todo app written in React Native
