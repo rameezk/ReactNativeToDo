@@ -1,12 +1,6 @@
-import React from 'react'
 import { AppRegistry } from 'react-native'
+import App from './app/app'
 
-import App from './app'
+AppRegistry.registerComponent('ReactNativeTodo', () => App)
 
-const ReactNativeTodo = () => {
-  return <App />
-}
-
-AppRegistry.registerComponent('ReactNativeTodo', () => ReactNativeTodo)
-
-export default ReactNativeTodo
+export default App
