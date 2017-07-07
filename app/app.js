@@ -4,7 +4,9 @@ import { Provider } from 'react-redux'
 import todoApp from './reducers'
 import SceneContainer from './containers/scene-container'
 
-const store = createStore(todoApp)
+import devToolsEnhancer from 'remote-redux-devtools'
+
+const store = createStore(todoApp, devToolsEnhancer())
 
 class App extends Component {
   render() {

@@ -1,17 +1,6 @@
 import { ADD_TODO, TOGGLE_TODO } from '../actions/constants'
 
-const initialTodos = [
-  {
-    id: 1,
-    text: 'Todo 1',
-    completed: false,
-  },
-  {
-    id: 2,
-    text: 'Todo 2',
-    completed: false,
-  },
-]
+const initialTodos = []
 
 function todo(state, action) {
   switch (action.type) {
@@ -37,8 +26,9 @@ function todo(state, action) {
 
 function todos(state = initialTodos, action) {
   switch (action.type) {
-  case ADD_TODO:
+  case ADD_TODO: {
     return [...state, todo(undefined, action)]
+  }
   case TOGGLE_TODO:
     return state.map(t => todo(t, action))
   default:
